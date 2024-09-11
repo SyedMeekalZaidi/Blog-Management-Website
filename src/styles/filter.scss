@@ -1,0 +1,109 @@
+@import './variables';
+
+/* General styles for the filter sidebar */
+.filter {
+    background-color: $secondary-color; 
+    padding: 1.5rem;
+    position: fixed; 
+    top: 5.2rem; 
+    left: 0;
+    width: 250px;
+    height: calc(100vh - 4rem); 
+    overflow-y: auto; 
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); 
+    border-right: 1px solid #89cfe0; 
+  
+    h2 {
+      margin-top: 0;
+      font-size: 1.5rem;
+      color: $text-color;
+    }
+  
+    form {
+      margin-top: 1rem;
+    }
+  
+    fieldset {
+      border: none;
+      padding: 0;
+      margin: 0;
+    }
+  
+    ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+  
+    li {
+      margin-bottom: 0.5rem;
+    }
+  
+    label {
+      display: flex;
+      align-items: center;
+      font-size: 1rem;
+      color: $text-secondary;
+      cursor: pointer;
+  
+      &:hover {
+        color: #0066cc; 
+      }
+    }
+  
+    input[type='checkbox'] {
+      margin-right: 0.75rem;
+      accent-color: #89cfe0; 
+    }
+  
+    /* Information for screen readers for accessibility */
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      border: 0;
+    }
+
+
+}
+
+.personal-details {
+  margin-top: 5rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid $primary-color;
+  border-radius: 8px;
+  text-align: left;
+  font-size: 0.9rem;
+  color: $text-color;
+
+  a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .linkedin-icon {
+    width: 1rem;
+    height: 1rem;
+    padding-left: 1rem;
+    vertical-align: middle;
+  }
+
+  ul {
+    list-style-type:circle; 
+    padding-left: 2rem;
+
+    li {
+      margin-top: 0.5rem;
+    }
+  }
+}
+  
